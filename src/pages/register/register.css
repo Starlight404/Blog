@@ -1,0 +1,53 @@
+.RegisterTitle{
+    font-size: 50px;
+}
+
+
+
+.Register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://p4.wallpaperbetter.com/wallpaper/603/330/349/high-resolution-images-of-nature-3840x2160-wallpaper-preview.jpg");
+    background-size: cover;
+}
+
+.RegisterForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.RegisterForm > label {
+    margin: 10px  0;
+}
+
+.RegisterInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.RegisterButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:lightcoral;
+    border: none;
+    color: wheat;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.RegisterLoginButton{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: teal;
+    color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
