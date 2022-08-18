@@ -33,8 +33,6 @@ export default function SinglePost() {
         </p>
       </div>
     </div>
-
-
     </>
     
   )
