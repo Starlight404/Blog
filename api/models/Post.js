@@ -2,26 +2,29 @@ const mongoose = require ("mongoose")
 
 
 const PostSchema = new mongoose.Schema({
+    Title:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    Description:{
+        type:String,
+        required:true,
+    },
+    Photo:{
+        type:String,
+        required:false
+    },
     username:{
         type:String,
-        required:true,
-        unique:true
+        require:true,
     },
-    email:{
-        type:String,
-        required:true,
-        unique:true
-    },
-    passeord:{
-        type:String,
-        required:true
-    },
-    profilePic:{
-        type:String,
-        default: "",
-    },
+    categories:{
+        type:Array,
+        require: false
+    }
     
 
 },{timestamps:true});
 
-module.exports = mongoose.model("Posr", PostSchema);
+module.exports = mongoose.model("Post", PostSchema);
